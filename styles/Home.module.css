@@ -111,6 +111,19 @@
   font-size: 15px;
 }
 
+@media (max-width: 768px) {
+  .welcomeText {
+    font-size: 15px;
+    height: 200px;
+  }
+
+  .welcomeText h2 {
+    font-size: 12px;
+  }
+}
+
+
+
 /* SCROLLABLE CONTENT */
 
 .pageContent {

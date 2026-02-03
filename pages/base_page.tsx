@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Link from 'next/link';
+import { useEffect } from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,6 +35,7 @@ function WelcomeText() {
   const about = `This is my*  Portfolio site. *Minha Lee`
   const sub_about = `Powered by Github and created by Me with Next.js.`
   const sub_about_2 = `Interactive portfolio* additionally powered by Replay.js (*Playable!).`
+  const sub_about_3 = `(This site is not yet optimized for mobile viewing)`
 
   return (
     <div className={styles.welcomeText}>
@@ -46,6 +48,9 @@ function WelcomeText() {
       <h2>
         {sub_about_2}
       </h2>
+      <h6>
+        {sub_about_3}
+      </h6>
     </div>
   )
 } 
